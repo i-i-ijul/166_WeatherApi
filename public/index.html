@@ -171,7 +171,6 @@
                 const data = await response.json();
 
                 if (response.ok) {
-                    // Update elemen HTML berdasarkan ID dan properti JSON dari backend
                     document.getElementById('negara').innerText = data.negara || '-';
                     document.getElementById('provinsi').innerText = data.provinsi || '-';
                     document.getElementById('kecamatan').innerText = data.kecamatan || '-';
